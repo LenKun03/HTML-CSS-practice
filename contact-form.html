@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact-form.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Contact Us</h1>
+      <div id="grid">
+        <div class="grid1">
+          <div class="first">
+            <p>First Name *</p>
+            <input type="text" id="first-name" />
+            <p id="alert" style="font-size: 12px"></p>
+          </div>
+          <div class="last">
+            <p>Last Name *</p>
+            <input type="text" id="last-name" />
+            <p id="last-alert" style="font-size: 12px"></p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <p>Email Address *</p>
+          <input type="email" id="email" />
+          <p id="email-alert" style="font-size: 12px"></p>
+        </div>
+
+        <div class="grid3" style="margin: 0px">
+          <p style="margin-bottom: 0px; margin-top: 10px">Query Type *</p>
+          <div class="query-type">
+            <div class="enquiry">
+              <input type="radio" id="radio-enquiry" name="query" />
+              <label for="query" id="ge" style="cursor: pointer"
+                >General Enquiry</label
+              >
+            </div>
+            <div class="request">
+              <input type="radio" id="radio-request" name="query" />
+              <label for="query" id="sr" style="cursor: pointer"
+                >Support Request</label
+              >
+              <!-- <p id="alert" style="font-size: 12px"></p> -->
+            </div>
+          </div>
+          <p id="enquiry-alert" style="font-size: 12px; margin: 0px"></p>
+        </div>
+
+        <div class="grid4">
+          <p>Message *</p>
+          <textarea name="message" id="message"></textarea>
+          <p id="message-alert" style="font-size: 12px"></p>
+        </div>
+
+        <div class="grid5">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">I consent being contacted by the team</label>
+        </div>
+        <p
+          id="consent-alert"
+          style="font-size: 12px; margin-top: 0px; margin-bottom: 25px"></p>
+        <button id="submit" onclick="submitButton();">Submit</button>
+      </div>
+    </div>
+
+    <!--
+    <form>
+      <legend>Contact Us</legend>
+      <div id="name">
+        <div id="first">
+          <label for="name">First Name *</label>
+          <input type="text" name="First-name" id="first-name" />
+        </div>
+        <div id="last">
+          <label for="name">Last Name *</label>
+          <input type="text" name="Last-name" id="last-name" />
+        </div>
+      </div>
+
+      <label for="email">Email *</label>
+      <input type="email" name="mail" id="mail" />
+    </form>
+
+    -->
+
+    <script src="contact-form.js"></script>
+  </body>
+</html>

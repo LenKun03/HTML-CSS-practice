@@ -1,0 +1,121 @@
+@font-face {
+  font-family: First;
+  src: url(assets/fonts/static/Karla-Regular.ttf);
+}
+
+body {
+  background-color: hsl(157, 57%, 83%);
+}
+
+#main {
+  width: 700px;
+  height: 750px;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-family: First;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
+}
+
+#grid {
+  display: grid;
+}
+
+.grid1,
+.query-type,
+.grid5 {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 700px;
+}
+
+.first input,
+.last input {
+  width: 315px;
+  margin-right: 10px;
+}
+
+.grid2 input {
+  width: 653px;
+}
+
+.enquiry,
+.request {
+  display: flex;
+  border-width: 2px solid black;
+  height: 45px;
+  width: 314px;
+  border-radius: 5px;
+  margin-right: 13px;
+  margin-bottom: 0px;
+  align-items: center;
+  padding-left: 10px;
+  border: thin rgba(0, 0, 0, 0.449) solid;
+  cursor: pointer;
+}
+
+#radio-enquiry,
+#radio-request {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  border: thin rgba(0, 0, 0, 1) groove;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#message {
+  width: 645px;
+  height: 100px;
+  padding: 10px;
+  font-family: First;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+#submit {
+  background-color: rgb(19, 130, 98);
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.grid5, .grid5 p {
+  height: 50px;
+}
+
+.radio,
+#checkbox {
+  cursor: pointer;
+}
+
+input:hover,
+textarea:hover {
+  border-color: rgb(11, 156, 127);
+  cursor: pointer;
+}
+
+.enquiry:hover,
+.request:hover {
+  border-color: rgb(14, 78, 65);
+  cursor: pointer;
+  background-color: rgba(111, 212, 192, 0.285);
+}
+
+#radio-enquiry, #radio-request, #checkbox {
+  accent-color:rgb(13, 170, 110);
+}
+
+#submit:hover{
+  background-color: rgb(5, 92, 64);
+}
